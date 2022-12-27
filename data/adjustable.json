@@ -1,0 +1,241 @@
+{
+  "adjustable": [
+    {
+      "name" : "NE500S Base",
+      "type" : "adjustable",
+      "title" : "Essential zero-clearance, head/foot adjustments + multi-base sync with 4-in-1 adjustable legs.",
+      "rate" : 4.6,
+      "des": ["Independent head & foot adjustment with multi-base syncing for split sizes", "USB charging ports, LED lighting, wireless remote, and flashlight", "4-in-1 adjustable legs (3' + 3' + 6')"],
+      "size": ["Twin XL", "Full", "Queen", "King"],
+      "price" : [1800, 2100, 2200, 2400],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2021/06/NE500S-Base_1-1536x1024.png",
+      "id" : 0
+    },
+    {
+      "name" : "NL200U Base",
+      "type" : "adjustable",
+      "title" : "Essential zero-clearance, head/foot adjustments + multi-base sync with 3-in-1 adjustable legs.",
+      "rate" : 4.6,
+      "des": ["Zero clearance design with '3.5' low profile padded base thickness", "Independent head & foot adjustment with wireless remote and flashlight", "Multi-base syncing for split sizes with 3-in-1 adjustable legs (5' + 7')"],
+      "size": ["Twin XL", "Full", "Queen", "King"],
+      "price" : [749, 799, 999, 1399],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/07/NL300U-Base_1-1536x837.png",
+      "id" : 1
+    },
+    {
+      "name" : "NL300U Base",
+      "type" : "adjustable",
+      "title" : "Zero-clearance, head/foot adjustments, massaging & automated features, 3-in-1 adjustable legs.",
+      "rate" : 4.5,
+      "des": ["Independent head & foot adjustment with multi-base syncing for split sizes", "Three massage modes + three levels of intensity", "USB charging ports, LED lighting, wireless remote, and flashlight with 3-in-1 adjustable legs (5' + 7')"],
+      "size": ["Twin XL", "Full", "Queen", "King"],
+      "price" : [849, 899, 1199, 1599],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/NL200U-Base_1-1536x837.png",
+      "id" : 2
+    }
+  ],
+  "pillows": [
+    {
+      "name" : "BioRelax",
+      "type" : "pillow",
+      "title": "Release stress once your head hits the CBD pillow with oils infused into every fiber.",
+      "rate": 4.5,
+      "des": "CBD oil is infused directly into the memory foam core of the pillow, which may help relieve anxiety, lower stress, and promote a night of peaceful sleep. The plush fabric cover is infused with CBD, and the core is available in two thicknesses.",
+      "size": ["Classic Standard", "Classic Thick"],
+      "price": [149, 159],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/07/BioRelax-Pillow_2-1536x1536.jpg",
+      "id": 3
+
+  },
+  {
+    "name" : "JAMA Pillow",
+    "type" : "pillow",
+      "title": "Your little one's new favorite pillow that adjusts as quickly as they grow.",
+      "rate": 4.5,
+      "des": "The JAMA™ pillow is more than a cool print and shape. It contains three separate layers that are individually wrapped to customize the height and feel of the pillow. Two of these layers are flat for easy height adjustment, while the top layer is contoured for a supportive fit. Outside is a soft, washable cover.",
+      "size": ["Classic Standard", "Classic Thick"],
+      "price": [39, 49],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2021/09/JAMA-Pillow_2-1536x1536.jpg",
+      "id": 4
+  },
+  {
+    "name" : "Serenity Contour Pillow",
+    "type" : "pillow",
+      "title": "Molded to match your curves and keep you cool with exclusive PCM coating.",
+      "rate": 4.2,
+      "des": "This pillow has been a consistent bestseller since it launched over five years ago. It is highly versatile, with the straight side providing a more traditional pillow experience for back and stomach sleepers while the contoured side hugs the shoulders for side sleeping. The core is made up of premium Ventilated Bamboo Charcoal Memory Foam to improve breathability.",
+      "size": ["Classic Standard", "Classic Thick"],
+      "price": [69, 79],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2021/09/2022-5-16_Serenity_Contour_S_001-1536x1024.jpg",
+      "id": 5
+    }
+  ],
+  "memory-foam": [
+    {
+      "name" : "WellFlex 2.0",
+      "type" : "mattress",
+      "kind" : "memory-foam",
+      "title": "The WellFlex 2.0 delivers MLILY comfort with  medium-feel, cooling benefits, & premium foams.",
+      "rate": 4.3,
+      "des": "The WellFlex 2.0's design complements the WellFlex 1.0 but with a medium feel. Like the 1.0 model, it also contains layers of memory foam specializing in breathability, increased comfort, and extended coolness. This mattress also works exceptionally well with adjustable bases due to its high flexibility and low depth profile.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [1099,1199,1499,1999,2499,2499],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/WellFlex-2.0_Bedroom-View_Front-View_72-DPI-1536x864.jpg",
+      "id": 6
+    },
+    {
+      "name" : "MLILY Dream",
+      "type" : "mattress",
+      "kind" : "memory-foam",
+      "title": "Relax your muscles and rejuvenate your  body on the mattress built for professional athletes.",
+      "rate": 4.3,
+      "des": "This mattress is the result of MLILY's global partnership with Manchester United Football Club. It is an upgrade from the previous Dream mattress, also known as the Theatre of Dreams. This mattress is now an all-foam build to allow for a medium feel designed to adapt to the body's natural curves. Its Gel AeroFusion™ Memory Foam and Adaptive Foam layers allow for air circulation and extended coolness to ensure a more relaxed night's sleep.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [599,699,899,999,1199,1199],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2021/09/MLILY-Dream_Bedroom-View_High-Resolution_1-1536x864.jpg",
+      "id": 7
+    },
+    {
+      "name" : "Mprove 2.0",
+      "type" : "mattress",
+      "kind" : "memory-foam",
+      "title": "Doze deeper with the medium-feel, CBD infused  Mprove 2.0 with temperature regulation.",
+      "rate": 4.6,
+      "des": "The Mprove 2.0 is the all-foam model in our CBD-infused mattress line with a medium feel. The CBD oil-infused cover promotes a calmer sleep, and its extra deep 15' foam-build adds comfort, support, and temperature regulation throughout the night.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [1499,1999,2499,2999,3499,3499],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Mprove-2.0_Front-View_Bedroom-View-1536x864.jpg",
+      "id": 8
+    },
+    {
+      "name" : "Harmony+",
+      "type" : "mattress",
+      "kind" : "memory-foam",
+      "title": "Super soft and cozy cover, the Harmony + is medium-firm and exceptionally breathable.",
+      "rate": 4.3,
+      "des": "The Harmony + is a medium-firm mattress that features foam layers specially designed to conform to the weight and pressure of every individual. Its cover is soft to the touch and exceptionally breathable. The foam layers provide maximum air circulation and temperature regulation to keep the sleeper cool and supported through the night.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [899,999,1199,1499,1999,1999],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Harmony-Plus_Bedroom-View_High-Resolution_1-1536x864.jpg",
+      "id": 9
+    },
+    {
+      "name" : "Harmony Chill 3.0",
+      "type" : "mattress",
+      "kind" : "memory-foam",
+      "title": "Bestselling plush foam mattress with five layers of chilly temperature-regulating materials.",
+      "rate": 4.3,
+      "des": "The plush feel Harmony Chill 3.0 includes layers of Gel AeroFusion™ Memory Foam with a coating of MLILY-exclusive Phase-Changing Material PCM, Bamboo Charcoal Memory Foam, and Liquid Gel Flex Foam, covered in a Cooling Knit Fabric.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [2299,2499,2999,3499,3999,3999],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2021/09/Harmony-Chill-3.0_Bedroom-View_High-Resolution_1-1536x864.jpg",
+      "id": 10
+    }
+  ],
+  "hybrid": [
+    {
+      "name" : "Fusion Orthopedic",
+      "type" : "mattress",
+      "kind" : "hybrid",
+      "title": "Our firmest hybrid that distributes body pressure evenly for joint and back support.",
+      "rate": 4.3,
+      "des": "The Fusion Orthopedic is often recommended to those looking for a firmer, more aligning sleep. The firm feel of the Orthopedic provides an excellent option for stomach and back sleepers. The pocketed springs are extra thick and work to distribute pressure evenly along the body, allowing for advanced back and joint support. Its layer of Ventilated Gel AeroFusion™ Memory Foam provides added breathability so every sleeper can wake up refreshed.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [899,999,1199,1499,1999,1999],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Fusion-Ortho_Bedroom-View_Low-Resolution_1-1536x864.jpg",
+      "id": 11
+
+  },
+  {
+    "name" : "Fusion Luxe",
+    "type" : "mattress",
+      "kind" : "hybrid",
+      "title": "Our most popular medium plush hybrid, ideal for side sleepers and hot sleepers.",
+      "rate": 4.4,
+      "des": "The Fusion Luxe is one of our most popular and best-selling mattresses. It has a medium-plush feel that actively adapts to the contours of every individual, providing pressure relief to side sleepers. The Cooling Knit Fabric Cover and Gel AeroFusion Memory Foam layer promote airflow and a cooler sleep all night.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [1999,2249,2499,2999,3499,3499],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Fusion-Luxe_Bedroom_Front-View_Small-1536x864.jpg",
+      "id": 12
+  },
+  {
+    "name" : "Fusion Supreme",
+    "type" : "mattress",
+      "kind" : "hybrid",
+      "title": "Meet our best all-around -- the adaptable  mattress designed for the sleeping gymnast.",
+      "rate": 4.3,
+      "des": "The Fusion Supreme is a comfortable middle ground that fits all sleepers and sleeping positions with a medium feel. The Bamboo Charcoal Memory Foam layer regulates temperature and moisture, while the Ventilated AeroFusion™ Memory Foam layer promotes air circulation. It keeps the sleeper cool and comfortable with its combination of breathable and cooling foams.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [1599,1749,1999,2499,2999,2999],
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Fusion-Supreme_Bedroom-View_Low-Resolution_1-1536x864.jpg",
+      "id": 13
+    },
+    {
+      "name" : "ChiroPro Firm",
+      "type" : "mattress",
+      "kind" : "hybrid",
+        "title": "Introducing ChiroPro, a 13-inch hybrid mattress featuring a firm feel endorsed by the International Chiropractors Association.",
+        "rate": 4.9,
+        "des": "The ChiroPro Firm is a 13-inch mattress endorsed by the International Chiropractors Association.  This mattress is made with firm memory foam that adapts to the body while sleeping.  Its cooling feature helps regulate temperatures to give a great night's sleep.",
+        "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+        "price": [1550,1750,1950,2450,2850,2850],
+        "photo": "https://mlilyusa.com/wp-content/uploads/2022/11/ChiroPro_13in_FIRM_01-1536x1024.jpg",
+        "id": 14
+      }
+  ],
+  "springs": [
+    {
+      "name" : "Beautyrest® Black",
+      "title": "Premium features and modern design for a first-class sleep experience that will leave you feeling invigorated.",
+      "rate": 4.3,
+      "des": "Indulge in first-class restorative sleep night after night with the modern design of the Beautyrest Black® line—our most advanced collection yet.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [1749,2049,2329,2499,3099,3099],
+      "photo": "https://images.prismic.io/br-prismic-cms/b14381c9-6f2d-422b-a3db-149169ee70ca_BR-BLACK-L-CLASS-+1.jpg?auto=compress,format",
+      "id": 15
+
+  },
+  {
+    "name" : "Beautyrest® Harmony Lux Carbon Series",
+      "title": "Innovative design for a premium sleep experience.",
+      "rate": 4.0,
+      "des": "Beautyrest® Harmony Lux™ Carbon Series features our latest innovations in support, comfort, and cooling that work together in harmony for a better night’s sleep. Its new and innovative coil design and support system, advanced pressure relieving foams, uniquely engineered cooling technologies and exclusive sustainable fabric technology makes this collection the ultimate choice in premium bedding. Featuring our RightTemp™ Wave Foam, our Harmony Lux™ Carbon Series sleeps cool and comfortable all night. ",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [1299,1349,1419,1499,1999,1999],
+      "photo": "https://images.prismic.io/br-prismic-cms/e924e212-577f-4303-a36f-86a61c47db3a_BR_harmony_lux_carbon_gallery_classic_top_med_ls_2.jpg?auto=compress,format",
+      "id": 16
+  },
+  {
+    "name" : "Beautyrest® Harmony",
+      "title": "Elevated, sustainable comfort with SEAQUAL™ fabric technology.",
+      "rate": 4.4,
+      "des": "Beautyrest® Harmony features new innovations in support, comfort, and cooling working together in harmony to unlock your best sleep. First, we’ve developed a Targeted Support System™ powered by T1 Pocketed Coil® Technology designed to offer additional support where your body needs it most. The T1 Pocketed Coil is placed within the center of the mattress to power the new support system. This patented, dual-stage coil design was invented by Beautyrest® and provides additional support under heavier compression. In addition, we've introduced new comfort technologies, including a premium memory foam infused with charcoal that provides natural cooling and pressure relief. Choose from breathable and eco-friendly TENCEL® fabric, or step-up to enhanced cooling with cool-to-the-touch technology within our Emerald Bay Series.",
+      "size": ["Twin", "Twin XL", "Full", "Queen", "King", "California King"],
+      "price": [999,1029,1079,1099,1499,1499],
+      "photo": "https://images.prismic.io/br-prismic-cms/addbe4ee-1d4e-4aa5-8a85-b92c2a5cc96a_00_BR20_Harmony_Cayman_PL_Q_Room_Front.jpg?auto=compress,format",
+      "id": 17
+    }
+  ],
+  "mattresses" : [
+    {
+      "name": "Memory Foam mattresses",
+      "photo": "https://mlilyusa.com/wp-content/uploads/2021/09/MLILY-Dream_Bedroom-View_High-Resolution_1-1536x864.jpg",
+      "title" : "Specialty foams provide superior support, rejuvenating comfort and long-lasting durability.",
+      "link" : "http://localhost:3000/memory-foam"
+    },
+    {
+      "name": "Hybrid mattresses",
+      "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Fusion-Luxe_Bedroom_Front-View_Small-1536x864.jpg",
+      "title": "Our unique individually pocketed springs take the traditional bed to a whole new level of comfort.",
+      "link": "http://localhost:3000/hybrid"
+    },
+    {
+      "name": "Springs mattresses",
+      "photo": "https://images.prismic.io/br-prismic-cms/b14381c9-6f2d-422b-a3db-149169ee70ca_BR-BLACK-L-CLASS-+1.jpg?auto=compress,format",
+      "title": "Luxurious sleep, no matter which online Beautyrest® mattress you choose.",
+      "link": "http://localhost:3000/springs"
+    }
+  ]
+
+
+}
