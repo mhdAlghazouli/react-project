@@ -32,6 +32,8 @@ function CollapsibleExample() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+              <Nav.Link>
+
               <NavDropdown title="Mattresses" id="collasible-nav-dropdown">
                 <NavDropdown.Item as={Link} to={"/memory-foam"}>Memory Foam</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={"/hybrid"}>
@@ -41,6 +43,7 @@ function CollapsibleExample() {
                 <NavDropdown.Divider />
                 
               </NavDropdown>
+              </Nav.Link>
               <Nav.Link as={Link} to={"/adjustable-base"}>Adjustable Base</Nav.Link>
               <Nav.Link as={Link} to={"/Pillows"}>Pillows</Nav.Link>
               <Nav.Link as={Link} to={"/cart"}><ShoppingCartIcon /></Nav.Link>
