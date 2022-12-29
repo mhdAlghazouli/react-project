@@ -36,7 +36,7 @@ const Mattresses = () => {
         <a href={mattress.link} style={{
           "textDecoration": "none",
           "color": "black"
-        }} key={mattress.id}>
+        }} key={mattress.name}>
           <Container  >
           
 
