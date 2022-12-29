@@ -33,11 +33,11 @@ function CollapsibleExample() {
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <NavDropdown title="Mattresses" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="/memory-foam">Memory Foam</NavDropdown.Item>
-                <NavDropdown.Item href="/hybrid">
+                <NavDropdown.Item as={Link} to={"/memory-foam"}>Memory Foam</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/hybrid"}>
                   Hybrid
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/springs">Springs</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/springs"}>Springs</NavDropdown.Item>
                 <NavDropdown.Divider />
                 
               </NavDropdown>
