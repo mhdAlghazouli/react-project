@@ -31,7 +31,7 @@ const Cart = () => {
   function handleCheckOut() {
     alert("your payment has been received, thanks for shopping with us");
     localStorage.setItem('cart', "[]");
-    window.location.href = "http://localhost:3000"
+    window.location.href = "/"
   }
   
   
