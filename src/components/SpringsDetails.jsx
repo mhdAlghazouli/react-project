@@ -10,39 +10,38 @@ import Rating from '@mui/material/Rating';
 
 
 
-const HybridDetails = () => {
+const SpringsDetails = () => {
 
   const { id } = useParams();
-  const [hybridDetailsData, setHybridDetailsData] = useState(null)
-  const [hybridPrice, setHybridPrice] = useState("")
-  const [hybridSize, setHybridSize] = useState("");
+  const [springsDetailsData, setSpringsDetailsData] = useState(null)
+  const [springsPrice, setSpringsPrice] = useState("")
+  const [springsSize, setSpringsSize] = useState("")
   
   useEffect(() => {
-    fetch("http://localhost:3001/hybrid/" + id)
+    fetch("http://localhost:3001/springs/" + id)
     .then(res => res.json())
     .then(data => {
-      setHybridDetailsData(data)
+      setSpringsDetailsData(data)
     })
-  },[]);
-
-  
+  },[])
+ 
 
   function handleSubmit(e) {
-    setHybridSize(e.target.value)
+    setSpringsSize(e.target.value)
     if(e.target.value === "Twin"){
-      setHybridPrice(hybridDetailsData.price[0])
+      setSpringsPrice(springsDetailsData.price[0])
     }else if(e.target.value === "Twin XL"){
-      setHybridPrice(hybridDetailsData.price[1])
+      setSpringsPrice(springsDetailsData.price[1])
     }else if(e.target.value === "Full"){
-      setHybridPrice(hybridDetailsData.price[2])
+      setSpringsPrice(springsDetailsData.price[2])
     }else if(e.target.value === "Queen"){
-      setHybridPrice(hybridDetailsData.price[3])
+      setSpringsPrice(springsDetailsData.price[3])
     }else if(e.target.value === "King"){
-      setHybridPrice(hybridDetailsData.price[4])
+      setSpringsPrice(springsDetailsData.price[4])
     }else if(e.target.value === "California King"){
-      setHybridPrice(hybridDetailsData.price[5])
+      setSpringsPrice(springsDetailsData.price[5])
     }
-    return hybridPrice
+    return springsPrice
   }
 
   function handleSubmit2() {
@@ -56,11 +55,11 @@ const HybridDetails = () => {
 
   function cartHandle() {
     const newCartData = {
-      name : hybridDetailsData.name,
-      id : hybridDetailsData.id,
-      price: hybridPrice,
-      size: hybridSize,
-      photo: hybridDetailsData.photo
+      name : springsDetailsData.name,
+      id: springsDetailsData.id,
+      price: springsPrice,
+      size: springsSize,
+      photo: springsDetailsData.photo
     }
     if(localStorage.getItem('cart') == null){
       localStorage.setItem('cart', '[]');
@@ -84,29 +83,29 @@ const HybridDetails = () => {
             }} >
           <Row>
             <Col md={4}>
-              <Image src={hybridDetailsData && hybridDetailsData.photo} alt="under working" fluid/>
+              <Image src={springsDetailsData && springsDetailsData.photo} alt="under working" fluid/>
             </Col>
             <Col md={8} style={{"display" : "flex", "flexDirection": "column", "justifyContent": "start", "alignItems": "start","marginTop" : "5px"}}>
               <Card.Title style={{"color" : "#222"}}>
-                {hybridDetailsData && hybridDetailsData.name}
+                {springsDetailsData && springsDetailsData.name}
               </Card.Title>
               
-              <Rating name="read-only" value={hybridDetailsData && hybridDetailsData.rate} readOnly precision={0.5}/>
+              <Rating name="read-only" value={springsDetailsData && springsDetailsData.rate} readOnly precision={0.5}/>
 
               <Card.Text style={{"textAlign": "left", "color" : "#666"}}>
-                {hybridDetailsData && hybridDetailsData.title}
+                {springsDetailsData && springsDetailsData.title}
               </Card.Text>
 
               <div style={{"display": "flex", "marginBottom": "5px"}}>
-                <Button style={{"marginRight" : "3px"}} size="sm" value={hybridDetailsData && hybridDetailsData.size[0]} onClick={(e) => handleSubmit(e)}>{hybridDetailsData && hybridDetailsData.size[0]}</Button>
-                <Button style={{"marginRight" : "3px"}} size="sm" value={hybridDetailsData && hybridDetailsData.size[1]} onClick={(e) => handleSubmit(e)}>{hybridDetailsData && hybridDetailsData.size[1]}</Button>
-                <Button style={{"marginRight" : "3px"}} size="sm" value={hybridDetailsData && hybridDetailsData.size[2]} onClick={(e) => handleSubmit(e)}>{hybridDetailsData && hybridDetailsData.size[2]}</Button>
-                <Button style={{"marginRight" : "3px"}} size="sm" value={hybridDetailsData && hybridDetailsData.size[3]} onClick={(e) => handleSubmit(e)}>{hybridDetailsData && hybridDetailsData.size[3]}</Button>
-                <Button style={{"marginRight" : "3px"}} size="sm" value={hybridDetailsData && hybridDetailsData.size[4]} onClick={(e) => handleSubmit(e)}>{hybridDetailsData && hybridDetailsData.size[4]}</Button>
-                <Button style={{"marginRight" : "3px"}} size="sm" value={hybridDetailsData && hybridDetailsData.size[5]} onClick={(e) => handleSubmit(e)}>{hybridDetailsData && hybridDetailsData.size[5]}</Button>
+                <Button style={{"marginRight" : "3px"}} size="sm" value={springsDetailsData && springsDetailsData.size[0]} onClick={(e) => handleSubmit(e)}>{springsDetailsData && springsDetailsData.size[0]}</Button>
+                <Button style={{"marginRight" : "3px"}} size="sm" value={springsDetailsData && springsDetailsData.size[1]} onClick={(e) => handleSubmit(e)}>{springsDetailsData && springsDetailsData.size[1]}</Button>
+                <Button style={{"marginRight" : "3px"}} size="sm" value={springsDetailsData && springsDetailsData.size[2]} onClick={(e) => handleSubmit(e)}>{springsDetailsData && springsDetailsData.size[2]}</Button>
+                <Button style={{"marginRight" : "3px"}} size="sm" value={springsDetailsData && springsDetailsData.size[3]} onClick={(e) => handleSubmit(e)}>{springsDetailsData && springsDetailsData.size[3]}</Button>
+                <Button style={{"marginRight" : "3px"}} size="sm" value={springsDetailsData && springsDetailsData.size[4]} onClick={(e) => handleSubmit(e)}>{springsDetailsData && springsDetailsData.size[4]}</Button>
+                <Button style={{"marginRight" : "3px"}} size="sm" value={springsDetailsData && springsDetailsData.size[5]} onClick={(e) => handleSubmit(e)}>{springsDetailsData && springsDetailsData.size[5]}</Button>
               </div>
               <div>
-                <h5>Price: ${hybridPrice}</h5>
+                <h5>Price: ${springsPrice}</h5>
               </div>
               <div style={{"marginBottom": "5px"}}>
                 <Button onClick={cartHandle}>Add to cart</Button>
@@ -118,11 +117,11 @@ const HybridDetails = () => {
           <Button onClick={handleSubmit2}>More Details</Button>
         </div>
         <div style={{"marginTop": "15px", "display": "none"}} id="hiddenDiv">
-          <p>{hybridDetailsData && hybridDetailsData.des}</p>
+          <p>{springsDetailsData && springsDetailsData.des}</p>
         </div>
       </Container>
     </div>
    );
 }
  
-export default HybridDetails;
+export default SpringsDetails;

@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
@@ -21,8 +19,6 @@ const AdjustableBase = () => {
       setAdjustableDB(data)
     })
   },[]);
-  console.log(adjustableDB)
-
 
   return ( 
     <div>

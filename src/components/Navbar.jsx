@@ -1,3 +1,4 @@
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -12,7 +13,10 @@ import MemoryFoam from './MemoryFoam';
 import Hybrid from './Hybrid';
 import MemoryFoamDetails from './MemoryFoamDetails';
 import HybridDetails from './HybridDetails';
+import Springs from './Springs';
+import SpringsDetails from "./SpringsDetails";
 import Mattresses from './Mattresses';
+import Cart from './Cart';
 import SearchBox from './SearchBox';
 import searchData from "./searchData.json";
 import "./style.css";
@@ -28,26 +32,20 @@ function CollapsibleExample() {
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <NavDropdown title="Mattresses" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="./memory-foam">Memory Foam</NavDropdown.Item>
-                <NavDropdown.Item href="./hybrid">
+                <NavDropdown.Item href="/memory-foam">Memory Foam</NavDropdown.Item>
+                <NavDropdown.Item href="/hybrid">
                   Hybrid
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Springs</NavDropdown.Item>
+                <NavDropdown.Item href="/springs">Springs</NavDropdown.Item>
                 <NavDropdown.Divider />
                 
               </NavDropdown>
               <Nav.Link as={Link} to={"/adjustable-base"}>Adjustable Base</Nav.Link>
               <Nav.Link as={Link} to={"/Pillows"}>Pillows</Nav.Link>
+              <Nav.Link as={Link} to={"/cart"}><ShoppingCartIcon /></Nav.Link>
             </Nav>
-            {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"/>
-            <Button variant="light" style={{"color": "#0275d8"}}>Search</Button>
-          </Form> */}
           <SearchBox searchData={ searchData } />
+          
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -62,7 +60,10 @@ function CollapsibleExample() {
           <Route path='/memory-foam/:id' element={<MemoryFoamDetails />} />
           <Route path='/hybrid' element={<Hybrid />} />
           <Route path='/hybrid/:id' element={<HybridDetails />} />
+          <Route path='/springs' element={<Springs />}/>
+          <Route path='/springs/:id' element={<SpringsDetails />} />
           <Route path='/mattresses' element={<Mattresses />}/>
+          <Route path='/cart' element={<Cart />}/>
         </Switch>
       </div>
 

@@ -15,6 +15,7 @@ const PillowDetails = () => {
   const { id } = useParams();
   const [pillowDetailData, setPillowDetailData] = useState(null)
   const [pillowPrice, setPillowPrice] = useState("")
+  const [pillowSize, setPillowSize] = useState("")
   
   useEffect(() => {
     fetch("http://localhost:3001/Pillows/" + id)
@@ -23,10 +24,10 @@ const PillowDetails = () => {
       setPillowDetailData(data)
     })
   },[])
-  console.log(pillowDetailData);
+ 
 
   function handleSubmit(e) {
-    console.log(e.target.value)
+    setPillowSize(e.target.value)
     if(e.target.value === "Classic Standard"){
       setPillowPrice(pillowDetailData.price[0])
     }else if(e.target.value === "Classic Thick"){
@@ -42,6 +43,27 @@ const PillowDetails = () => {
       document.getElementById("hiddenDiv").style.display = "none"
     }else{
       document.getElementById("hiddenDiv").style.display = "block"
+    }
+  }
+
+  function cartHandle() {
+    const newCartData = {
+      name : pillowDetailData.name,
+      id: pillowDetailData.id,
+      price: pillowPrice,
+      size: pillowSize,
+      photo: pillowDetailData.photo
+    }
+    if(localStorage.getItem('cart') == null){
+      localStorage.setItem('cart', '[]');
+    }
+    let oldCartData = JSON.parse(localStorage.getItem('cart'));
+    if(!oldCartData.find(i => i.id === newCartData.id)){
+      oldCartData.push(newCartData);
+      localStorage.setItem('cart', JSON.stringify(oldCartData));
+      alert('added to your cart')
+    }else{
+      alert('already in your cart')
     }
   }
 
@@ -75,7 +97,7 @@ const PillowDetails = () => {
                 <h5>Price: ${pillowPrice}</h5>
               </div>
               <div style={{"marginBottom": "5px"}}>
-                <Button>Add to cart</Button>
+                <Button onClick={cartHandle}>Add to cart</Button>
               </div>
             </Col>
           </Row>

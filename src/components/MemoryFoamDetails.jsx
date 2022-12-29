@@ -14,7 +14,8 @@ const MemoryFoamDetails = () => {
 
   const { id } = useParams();
   const [memoryFoamDetailsData, setMemoryFoamDetailsData] = useState(null)
-  const [memoryFoamPrice, setMemoryFoamPrice] = useState("")
+  const [memoryFoamPrice, setMemoryFoamPrice] = useState("");
+  const [memoryFoamSize, setMemoryFoamSize] = useState('')
   
   useEffect(() => {
     fetch("http://localhost:3001/memory-foam/" + id)
@@ -22,11 +23,10 @@ const MemoryFoamDetails = () => {
     .then(data => {
       setMemoryFoamDetailsData(data)
     })
-  },[])
-  console.log(memoryFoamDetailsData);
+  },[]);
 
   function handleSubmit(e) {
-    console.log(e.target.value)
+    setMemoryFoamSize(e.target.value)
     if(e.target.value === "Twin"){
       setMemoryFoamPrice(memoryFoamDetailsData.price[0])
     }else if(e.target.value === "Twin XL"){
@@ -49,6 +49,27 @@ const MemoryFoamDetails = () => {
       document.getElementById("hiddenDiv").style.display = "none"
     }else{
       document.getElementById("hiddenDiv").style.display = "block"
+    }
+  }
+
+  function cartHandle() {
+    const newCartData = {
+      name : memoryFoamDetailsData.name,
+      id: memoryFoamDetailsData.id,
+      price: memoryFoamPrice,
+      size: memoryFoamSize,
+      photo: memoryFoamDetailsData.photo
+    }
+    if(localStorage.getItem('cart') == null){
+      localStorage.setItem('cart', '[]');
+    }
+    let oldCartData = JSON.parse(localStorage.getItem('cart'));
+    if(!oldCartData.find(i => i.id === newCartData.id)){
+      oldCartData.push(newCartData);
+      localStorage.setItem('cart', JSON.stringify(oldCartData));
+      alert('added to your cart')
+    }else{
+      alert('already in your cart')
     }
   }
 
@@ -86,7 +107,7 @@ const MemoryFoamDetails = () => {
                 <h5>Price: ${memoryFoamPrice}</h5>
               </div>
               <div style={{"marginBottom": "5px"}}>
-                <Button>Add to cart</Button>
+                <Button onClick={cartHandle}>Add to cart</Button>
               </div>
             </Col>
           </Row>

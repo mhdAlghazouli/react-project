@@ -19,7 +19,7 @@ const Hybrid = () => {
       setHybridDB(data)
     })
   },[]);
-  console.log(hybridDB)
+  
 
 
   return ( 
@@ -28,7 +28,7 @@ const Hybrid = () => {
         "margin" : "30px"
       }}>
         
-        <h2>Mattresses</h2>
+        <h2>Hybrid Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>
         
       </div>

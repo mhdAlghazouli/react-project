@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import "./style.css"
 
 
@@ -50,29 +49,21 @@ const Home = () => {
 
     
       <Row className='news'>
-        <Col sm={6}>
-          <div className='left-side'>
+        <Col sm={6} className='d-flex flex-column justify-content-center align-items-center'>
+          
             <h6>RECENT NEWS</h6>
             <h2>Zz Mattress Gives Away 180 Mattresses</h2>
             <p>Zz Mattress was featured on CBS’ Daytime Emmy Award-winning talk show THE TALK following a promise to give 180 essential workers, volunteers and single parents a free Fusion Luxe queen sized mattress.</p>
-            <Button variant="primary">Learn More</Button>
-          </div>
+           
+          
         </Col>
         <Col sm={6}><div className='right-side'><img src="https://mlilyusa.com/wp-content/uploads/2020/06/2022-5-23_FusionLuxe_HS_Model_002_09-1536x1024.jpg" alt="" /></div></Col>
       </Row>
 
       <Row className="kids">
-        <Col sm={4}>
-          <div className='left-side '>
-            
+        <Col sm={4} className='d-flex flex-column justify-content-center align-items-center'>
             <h2>Pay Over Time With Zz Mattress</h2>
             <p>Financing as low as 0% APR for 12 months plus lease-to-own plans.*</p>
-            <Button variant="light" className='kidsBtn' style={{
-
-              "color" : "#0275d8"
-            }
-            }>Learn More</Button>
-          </div>
         </Col>
         <Col sm={8}><div className='right-side'><img src="https://mlilyusa.com/wp-content/uploads/2022/10/cta-block-images-koalifi.jpg" alt="" /></div></Col>
       </Row>

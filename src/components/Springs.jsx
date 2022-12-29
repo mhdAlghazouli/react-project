@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
@@ -21,7 +19,7 @@ const Springs = () => {
       setSpringsDB(data)
     })
   },[]);
-  console.log(springsDB)
+ 
 
 
   return ( 
@@ -30,13 +28,13 @@ const Springs = () => {
         "margin" : "30px"
       }}>
         
-        <h2>Mattresses</h2>
+        <h2>Springs Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>
         
       </div>
       {springsDB && springsDB.map(mattress => (
         
-        <Link to={`/memory-foam/${mattress.id}`} style={{
+        <Link to={`/springs/${mattress.id}`} style={{
           "textDecoration": "none",
           "color": "black"
         }} key={mattress.id}>

@@ -10,11 +10,13 @@ import Rating from '@mui/material/Rating';
 
 
 
+
 const AdjustableBaseDetails = () => {
 
   const { id } = useParams();
   const [adjDetailData, setAdjDetailData] = useState(null)
   const [adjPrice, setAdjPrice] = useState("")
+  const [adjSize, setAdjSize] = useState("")
   
   useEffect(() => {
     fetch("http://localhost:3001/adjustable/" + id)
@@ -23,10 +25,10 @@ const AdjustableBaseDetails = () => {
       setAdjDetailData(data)
     })
   },[])
-  console.log(adjDetailData);
+  
 
   function handleSubmit(e) {
-    console.log(e.target.value)
+    setAdjSize(e.target.value)
     if(e.target.value === "Twin XL"){
       setAdjPrice(adjDetailData.price[0])
     }else if(e.target.value === "Full"){
@@ -40,7 +42,7 @@ const AdjustableBaseDetails = () => {
     }
     return adjPrice
   }
-
+  
   function handleSubmit2() {
     if(document.getElementById("hiddenDiv").style.display === "block"){
 
@@ -48,6 +50,32 @@ const AdjustableBaseDetails = () => {
     }else{
       document.getElementById("hiddenDiv").style.display = "block"
     }
+  }
+
+  function cartHandle() {
+    const newCartData = {
+      name : adjDetailData.name,
+      price: adjPrice ,
+      id: adjDetailData.id,
+      size: adjSize,
+      photo : adjDetailData.photo
+      
+    }
+   
+    if(localStorage.getItem('cart') == null  ){
+      localStorage.setItem('cart', '[]');
+    }
+    
+    let oldCartData = JSON.parse(localStorage.getItem('cart'));
+    if(!oldCartData.find(i => i.id === newCartData.id)){
+      oldCartData.push(newCartData);
+      localStorage.setItem('cart', JSON.stringify(oldCartData));
+      alert('added to your cart')
+    }else{
+      alert('already in your cart')
+    }
+      
+
   }
 
   return ( 
@@ -82,7 +110,7 @@ const AdjustableBaseDetails = () => {
                 <h5>Price: ${adjPrice}</h5>
               </div>
               <div style={{"marginBottom": "5px"}}>
-                <Button>Add to cart</Button>
+                <Button onClick={cartHandle}>Add to cart</Button>
               </div>
             </Col>
           </Row>

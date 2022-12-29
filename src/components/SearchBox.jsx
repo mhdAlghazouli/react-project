@@ -2,8 +2,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
-
-import "./style.css"
+import "./style.css";
 
 const SearchBox = ({ searchData }) => {
 

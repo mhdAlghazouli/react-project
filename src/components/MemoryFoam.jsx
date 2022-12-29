@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
@@ -21,7 +19,7 @@ const MemoryFoam = () => {
       setMemoryFoamDB(data)
     })
   },[]);
-  console.log(memoryFoamDB)
+  
 
 
   return ( 
@@ -30,7 +28,7 @@ const MemoryFoam = () => {
         "margin" : "30px"
       }}>
         
-        <h2>Mattresses</h2>
+        <h2>Memory foam Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>
         
       </div>
