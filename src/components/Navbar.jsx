@@ -22,6 +22,7 @@ import searchData from "./searchData.json";
 import "./style.css";
 
 function CollapsibleExample() {
+
   return (
     <Router>
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
