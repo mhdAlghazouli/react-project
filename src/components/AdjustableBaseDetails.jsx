@@ -19,7 +19,7 @@ const AdjustableBaseDetails = () => {
   const [adjSize, setAdjSize] = useState("")
   
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/adjustable/" + id)
+    fetch("http://localhost:3001/adjustable/" + id)
     .then(res => res.json())
     .then(data => {
       setAdjDetailData(data)

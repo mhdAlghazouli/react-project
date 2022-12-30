@@ -18,7 +18,7 @@ const MemoryFoamDetails = () => {
   const [memoryFoamSize, setMemoryFoamSize] = useState('')
   
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/memory-foam/" + id)
+    fetch("http://localhost:3001/memory-foam/" + id)
     .then(res => res.json())
     .then(data => {
       setMemoryFoamDetailsData(data)

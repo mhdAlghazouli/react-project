@@ -221,19 +221,19 @@
       "name": "Memory Foam mattresses",
       "photo": "https://mlilyusa.com/wp-content/uploads/2021/09/MLILY-Dream_Bedroom-View_High-Resolution_1-1536x864.jpg",
       "title" : "Specialty foams provide superior support, rejuvenating comfort and long-lasting durability.",
-      "link" : "https://zzmattressandmore.herokuapp.com/memory-foam"
+      "link" : "http://localhost:3000/memory-foam"
     },
     {
       "name": "Hybrid mattresses",
       "photo": "https://mlilyusa.com/wp-content/uploads/2020/06/Fusion-Luxe_Bedroom_Front-View_Small-1536x864.jpg",
       "title": "Our unique individually pocketed springs take the traditional bed to a whole new level of comfort.",
-      "link": "https://zzmattressandmore.herokuapp.com/hybrid"
+      "link": "http://localhost:3000/hybrid"
     },
     {
       "name": "Springs mattresses",
       "photo": "https://images.prismic.io/br-prismic-cms/b14381c9-6f2d-422b-a3db-149169ee70ca_BR-BLACK-L-CLASS-+1.jpg?auto=compress,format",
       "title": "Luxurious sleep, no matter which online Beautyrest® mattress you choose.",
-      "link": "https://zzmattressandmore.herokuapp.com/springs"
+      "link": "http://localhost:3000/springs"
     }
   ]
 

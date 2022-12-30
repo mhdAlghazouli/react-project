@@ -12,7 +12,7 @@ const Mattresses = () => {
   const [ mattressesDB, setMattressesDB ] = useState(null);
 
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/mattresses")
+    fetch("http://localhost:3001/mattresses")
     .then(res => res.json())
     .then(data => {
       setMattressesDB(data)

@@ -13,7 +13,7 @@ const Pillows = () => {
   const [ pillowDB, setPillowDB ] = useState(null);
 
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/Pillows")
+    fetch("http://localhost:3001/pillows")
     .then(res => res.json())
     .then(data => {
       setPillowDB(data)

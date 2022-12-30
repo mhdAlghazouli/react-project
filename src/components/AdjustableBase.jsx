@@ -13,7 +13,7 @@ const AdjustableBase = () => {
   const [ adjustableDB, setAdjustableDB ] = useState(null);
 
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/adjustable")
+    fetch("http://localhost:3001/adjustable")
     .then(res => res.json())
     .then(data => {
       setAdjustableDB(data)

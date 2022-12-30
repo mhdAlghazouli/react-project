@@ -13,7 +13,7 @@ const Springs = () => {
   const [ springsDB, setSpringsDB ] = useState(null);
 
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/springs")
+    fetch("http://localhost:3001/springs")
     .then(res => res.json())
     .then(data => {
       setSpringsDB(data)

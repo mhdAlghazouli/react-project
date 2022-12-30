@@ -13,7 +13,7 @@ const MemoryFoam = () => {
   const [ memoryFoamDB, setMemoryFoamDB ] = useState(null);
 
   useEffect(() => {
-    fetch("https://zzmattressandmore.herokuapp.com/memory-foam")
+    fetch("http://localhost:3001/memory-foam")
     .then(res => res.json())
     .then(data => {
       setMemoryFoamDB(data)
