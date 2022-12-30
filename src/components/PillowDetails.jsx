@@ -18,7 +18,7 @@ const PillowDetails = () => {
   const [pillowSize, setPillowSize] = useState("")
   
   useEffect(() => {
-    fetch("http://localhost:3001/Pillows/" + id)
+    fetch("https://zzmattressandmore.herokuapp.com/Pillows/" + id)
     .then(res => res.json())
     .then(data => {
       setPillowDetailData(data)
