@@ -13,10 +13,11 @@ const Pillows = () => {
   const [ pillowDB, setPillowDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/pillows")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setPillowDB(data)
+      console.log(data[0].pillows)
+      setPillowDB(data[0].pillows)
     })
   },[]);
 

@@ -12,10 +12,10 @@ const Mattresses = () => {
   const [ mattressesDB, setMattressesDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/mattresses")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setMattressesDB(data)
+      setMattressesDB(data[0].mattresses)
     })
   },[]);
   

@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Rating from '@mui/material/Rating';
+import data from "./adjustable.json"
 
 
 
@@ -18,11 +19,13 @@ const SpringsDetails = () => {
   const [springsSize, setSpringsSize] = useState("")
   
   useEffect(() => {
-    fetch("http://localhost:3001/springs/" + id)
-    .then(res => res.json())
-    .then(data => {
-      setSpringsDetailsData(data)
-    })
+
+    for(let i = 0 ; i < data.springs.length; i++ ){
+      
+      if(data.springs[i].id === Number(id)){
+        setSpringsDetailsData(data.springs[i])
+      }
+    }
   },[])
  
 

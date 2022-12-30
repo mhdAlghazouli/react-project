@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Rating from '@mui/material/Rating';
+import data from "./adjustable.json"
 
 
 
@@ -18,11 +19,13 @@ const PillowDetails = () => {
   const [pillowSize, setPillowSize] = useState("")
   
   useEffect(() => {
-    fetch("http://localhost:3001/Pillows/" + id)
-    .then(res => res.json())
-    .then(data => {
-      setPillowDetailData(data)
-    })
+
+    for(let i = 0 ; i < data.pillows.length; i++ ){
+      
+      if(data.pillows[i].id === Number(id)){
+        setPillowDetailData(data.pillows[i])
+      }
+    }
   },[])
  
 

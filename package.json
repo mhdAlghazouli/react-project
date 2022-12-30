@@ -1,5 +1,4 @@
 {
-  "homepage": "http://mhdAlghazouli.github.io/react-project",
   
   "name": "react-project",
   
@@ -66,10 +65,6 @@
   
     
   "start": "react-scripts start",
-
-  "predeploy" : "npm run build",
-
-  "deploy" : "gh-pages -d build",
   
     
   "build": "react-scripts build",

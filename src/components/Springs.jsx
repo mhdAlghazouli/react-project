@@ -13,10 +13,10 @@ const Springs = () => {
   const [ springsDB, setSpringsDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/springs")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setSpringsDB(data)
+      setSpringsDB(data[0].springs)
     })
   },[]);
  

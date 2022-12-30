@@ -9,14 +9,15 @@ import { Container } from "react-bootstrap";
 
 
 
+
 const Hybrid = () => {
   const [ hybridDB, setHybridDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/hybrid")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setHybridDB(data)
+      setHybridDB(data[0].hybrid)
     })
   },[]);
   

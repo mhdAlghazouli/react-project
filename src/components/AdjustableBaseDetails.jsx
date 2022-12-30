@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Rating from '@mui/material/Rating';
+import data from "./adjustable.json"
 
 
 
@@ -17,14 +18,19 @@ const AdjustableBaseDetails = () => {
   const [adjDetailData, setAdjDetailData] = useState(null)
   const [adjPrice, setAdjPrice] = useState("")
   const [adjSize, setAdjSize] = useState("")
-  
+
   useEffect(() => {
-    fetch("http://localhost:3001/adjustable/" + id)
-    .then(res => res.json())
-    .then(data => {
-      setAdjDetailData(data)
-    })
+
+    for(let i = 0 ; i < data.adjustable.length; i++ ){
+      
+      if(data.adjustable[i].id === Number(id)){
+        setAdjDetailData(data.adjustable[i])
+      }
+    }
   },[])
+  
+  
+  
   
 
   function handleSubmit(e) {
