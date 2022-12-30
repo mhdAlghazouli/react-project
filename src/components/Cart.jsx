@@ -37,7 +37,7 @@ const Cart = () => {
   
   return ( 
     <div>
-      {cartData.length>0 ? <div> {cartData.map(el =>( 
+      {cartData.length===0  ?<p>Oops...  Your Cart is Empty</p>: <div> {cartData.map(el =>( 
       <div key={el.id} >
         <Card style={{
               "marginTop" : "15px",
@@ -65,7 +65,7 @@ const Cart = () => {
         
       </div>
        
-        )) }  <Button style={{"marginTop": "15px", "marginBottom": "15px"}} onClick={handleCheckOut}>Total is:{<span className="text-danger"> ${sum}</span>} Click to checkout</Button> </div>  : <p>Oops...  Your Cart is Empty</p> }
+        )) }  <Button style={{"marginTop": "15px", "marginBottom": "15px"}} onClick={handleCheckOut}>Total is:{<span className="text-danger"> ${sum}</span>} Click to checkout</Button> </div>    }
         
         
     </div>
