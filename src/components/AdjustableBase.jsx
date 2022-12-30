@@ -15,14 +15,13 @@ import { Container } from "react-bootstrap";
 const AdjustableBase = () => {
   const [ adjustableDB, setAdjustableDB ] = useState(null);
 
-  useEffect(() => {
-    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
-    .then(res => res.json())
-    .then(data => {
-      
-      setAdjustableDB(data[0].adjustable)
-    })
-  },[adjustableDB]);
+  
+  fetch("https://mhdalghazouli.github.io/data-of-react-project/")
+  .then(res => res.json())
+  .then(data => {
+    
+    setAdjustableDB(data[0].adjustable)
+  })
   
   return ( 
     <div>
