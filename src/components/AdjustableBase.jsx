@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
 import { Container } from "react-bootstrap";
+import data from "./adjustable.json"
+
 
 
 
@@ -14,15 +14,18 @@ import { Container } from "react-bootstrap";
 
 const AdjustableBase = () => {
   const [ adjustableDB, setAdjustableDB ] = useState(null);
-
   useEffect(() => {
-    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
-    .then(res => res.json())
-    .then(data => {
+
+    setAdjustableDB(data.adjustable)
+  },[])
+  // useEffect(() => {
+  //   fetch("https://mhdalghazouli.github.io/data-of-react-project/")
+  //   .then(res => res.json())
+  //   .then(data => {
       
-      setAdjustableDB(data[0].adjustable)
-    })
-  },[adjustableDB]);
+  //     setAdjustableDB(data[0].adjustable)
+  //   })
+  // },[adjustableDB]);
   
   return ( 
     <div>

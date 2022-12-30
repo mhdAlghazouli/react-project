@@ -27,8 +27,6 @@ root.render(
   <React.StrictMode>
     <Router>
       <App />
-      
-
         <Switch >
             <Route path='/' element={<Home />} />
             <Route path='/adjustable' element={<AdjustableBase />} />
@@ -44,8 +42,6 @@ root.render(
             <Route path='/mattresses' element={<Mattresses />}/>
             <Route path='/cart' element={<Cart />}/>
           </Switch>
-      
-      
     </Router>
     <Footer />
   </React.StrictMode>
