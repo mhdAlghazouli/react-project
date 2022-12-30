@@ -3,99 +3,105 @@
   {
     
     "name": "NE500S Base",
-    "link": "http://localhost:3000/adjustable-base/0"
+    "link": "https://zzmattressandmore.herokuapp.com/adjustable/0"
   },
   {
     
     "name": "NL200U Base",
-    "link": "http://localhost:3000/adjustable-base/1"
+    "link": "https://zzmattressandmore.herokuapp.com/adjustable/1"
   },
   {
     
     "name": "NL300U Base",
-    "link": "http://localhost:3000/adjustable-base/2"
+    "link": "https://zzmattressandmore.herokuapp.com/adjustable/2"
   },
   {
     
     "name": "BioRelax",
-    "link": "http://localhost:3000/Pillows/3"
+    "link": "https://zzmattressandmore.herokuapp.com/Pillows/3"
   },
   {
     
     "name": "JAMA Pillow",
-    "link": "http://localhost:3000/Pillows/4"
+    "link": "https://zzmattressandmore.herokuapp.com/Pillows/4"
   },
   {
     
     "name": "Serenity Contour Pillow",
-    "link": "http://localhost:3000/Pillows/5"
+    "link": "https://zzmattressandmore.herokuapp.com/Pillows/5"
   },
   {
     
     "name": "WellFlex 2.0",
     "kind": "memory-foam",
-    "link": "http://localhost:3000/memory-foam/6"
+    "link": "https://zzmattressandmore.herokuapp.com/memory-foam/6"
+  },
+  {
+    
+    "name": "MLILY Dream",
+    "kind": "memory-foam",
+    "link": "https://zzmattressandmore.herokuapp.com/memory-foam/7"
   },
   {
     
     "name": "Mprove 2.0",
     "kind": "memory-foam",
-    "link": "http://localhost:3000/memory-foam/8"
+    "link": "https://zzmattressandmore.herokuapp.com/memory-foam/8"
   },
   {
     
     "name": "Harmony+",
     "kind": "memory-foam",
-    "link": "http://localhost:3000/memory-foam/9"
+    "link": "https://zzmattressandmore.herokuapp.com/memory-foam/9"
   },
   {
     
     "name": "Harmony Chill 3.0",
     "kind": "memory-foam",
-    "link": "http://localhost:3000/memory-foam/10"
+    "link": "https://zzmattressandmore.herokuapp.com/memory-foam/10"
   },
   {
     
     "name": "Fusion Orthopedic",
     "kind": "hybrid",
-    "link": "http://localhost:3000/hybrid/11"
+    "link": "https://zzmattressandmore.herokuapp.com/hybrid/11"
   },
   {
     
     "name": "Fusion Luxe",
     "kind": "hybrid",
-    "link": "http://localhost:3000/hybrid/12"
+    "link": "https://zzmattressandmore.herokuapp.com/hybrid/12"
   },
   {
     
     "name": "Fusion Supreme",
     "kind": "hybrid",
-    "link": "http://localhost:3000/hybrid/13"
+    "link": "https://zzmattressandmore.herokuapp.com/hybrid/13"
   },
   {
     
     "name": "ChiroPro Firm",
     "kind": "hybrid",
-    "link": "http://localhost:3000/hybrid/14"
+    "link": "https://zzmattressandmore.herokuapp.com/hybrid/14"
   },
   {
     
     "name": "Beautyrest Black",
-    "link": "http://localhost:3000/springs/15"
+    "link": "https://zzmattressandmore.herokuapp.com/springs/15"
   },
   {
     
     "name": "Beautyrest Harmony Lux Carbon Series",
-    "link": "http://localhost:3000/springs/16"
+    "link": "https://zzmattressandmore.herokuapp.com/springs/16"
   },
   {
     
     "name": "Beautyrest Harmony",
-    "link": "http://localhost:3000/springs/17"
+    "link": "https://zzmattressandmore.herokuapp.com/springs/17"
   },
   {
     "name" : "adjustable",
-    "link" : "http://localhost:3000/adjustable-base"
+    "link" : "https://zzmattressandmore.herokuapp.com/adjustable"
   },
   {
     "name" : "mattress",
@@ -103,6 +109,6 @@
   },
   {
     "name" : "pillows",
-    "link" : "http://localhost:3000/Pillows"
+    "link" : "https://zzmattressandmore.herokuapp.com/Pillows"
   }
 ]
