@@ -2,8 +2,9 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
+import Nav from 'react-bootstrap/Nav';
+import "./style.css"
 import { BrowserRouter as Router, Route, Routes as Switch, Link  } from 'react-router-dom';
-import "./style.css";
 
 const SearchBox = ({ searchData }) => {
 
@@ -19,6 +20,8 @@ const SearchBox = ({ searchData }) => {
     }else{
       setFilteredData(newFilter)
     }
+   
+    
   }
   
   return ( 
@@ -31,7 +34,7 @@ const SearchBox = ({ searchData }) => {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-              onChange={handleFilter}/>
+              onChange={(e) => handleFilter(e)}/>
           </Form>
         </Col>
           {filteredData.length !== 0 && (
@@ -40,7 +43,7 @@ const SearchBox = ({ searchData }) => {
             {filteredData.map((value, key) => {
               return <div key={value.name}>
                 
-                <a className='dataItem'  href={value.link}><p>{value.name}</p></a>
+                <Nav.Link className='dataItem'  as={Link} to={value.link} onClick={() => setFilteredData([])} ><p>{value.name}</p></Nav.Link>
                 
                 </div> 
             })}
