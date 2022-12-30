@@ -25,7 +25,7 @@ function CollapsibleExample() {
 
   return (
     <div >
-      <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" >
         <Container >
           <Navbar.Brand as={Link} to={"/"}>ZzMattress</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
