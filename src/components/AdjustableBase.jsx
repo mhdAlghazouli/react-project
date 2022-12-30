@@ -22,7 +22,7 @@ const AdjustableBase = () => {
       
       setAdjustableDB(data[0].adjustable)
     })
-  },[]);
+  },[adjustableDB]);
   
   return ( 
     <div>
