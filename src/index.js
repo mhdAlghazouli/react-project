@@ -28,19 +28,19 @@ root.render(
     <Router>
       <App />
         <Switch >
-            <Route path='/' element={<Home />} />
-            <Route path='/adjustable' element={<AdjustableBase />} />
-            <Route path='/Pillows' element={<Pillows />} />
-            <Route path='/adjustable/:id' element={<AdjustableBaseDetails />}/>
-            <Route path='/Pillows/:id' element={<PillowDetails />}/>
-            <Route path='/memory-foam' element={<MemoryFoam />} />
-            <Route path='/memory-foam/:id' element={<MemoryFoamDetails />} />
-            <Route path='/hybrid' element={<Hybrid />} />
-            <Route path='/hybrid/:id' element={<HybridDetails />} />
-            <Route path='/springs' element={<Springs />}/>
-            <Route path='/springs/:id' element={<SpringsDetails />} />
-            <Route path='/mattresses' element={<Mattresses />}/>
-            <Route path='/cart' element={<Cart />}/>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/adjustable' element={<AdjustableBase />} />
+            <Route exact path='/Pillows' element={<Pillows />} />
+            <Route exact path='/adjustable/:id' element={<AdjustableBaseDetails />}/>
+            <Route exact path='/Pillows/:id' element={<PillowDetails />}/>
+            <Route exact path='/memory-foam' element={<MemoryFoam />} />
+            <Route exact path='/memory-foam/:id' element={<MemoryFoamDetails />} />
+            <Route exact path='/hybrid' element={<Hybrid />} />
+            <Route exact path='/hybrid/:id' element={<HybridDetails />} />
+            <Route exact path='/springs' element={<Springs />}/>
+            <Route exact path='/springs/:id' element={<SpringsDetails />} />
+            <Route exact path='/mattresses' element={<Mattresses />}/>
+            <Route exact path='/cart' element={<Cart />}/>
           </Switch>
     </Router>
     <Footer />
