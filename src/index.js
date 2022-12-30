@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes as Switch, Link  } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
+import CollapsibleExample from "./components/Navbar"
 import App from './App';
 import Home from './components/Home';
 import AdjustableBase from './components/AdjustableBase';
@@ -26,7 +26,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <CollapsibleExample />
       
 
         <Switch >
