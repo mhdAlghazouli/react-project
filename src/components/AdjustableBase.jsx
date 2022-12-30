@@ -32,7 +32,7 @@ const AdjustableBase = () => {
       </div>
       {adjustableDB && adjustableDB.map(adjustable => (
         
-        <Link to={`/adjustable-base/${adjustable.id}`} style={{
+        <Link to={`/adjustable/${adjustable.id}`} style={{
           "textDecoration": "none",
           "color": "black"
         }} key={adjustable.id}>

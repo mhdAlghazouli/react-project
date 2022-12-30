@@ -99,7 +99,7 @@
   },
   {
     "name" : "mattress",
-    "link" : "http://localhost:3000/mattresses"
+    "link" : "https://zzmattressandmore.herokuapp.com/mattresses"
   },
   {
     "name" : "pillows",

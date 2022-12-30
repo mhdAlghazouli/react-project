@@ -18,7 +18,7 @@ const HybridDetails = () => {
   const [hybridSize, setHybridSize] = useState("");
   
   useEffect(() => {
-    fetch("http://localhost:3001/hybrid/" + id)
+    fetch("https://zzmattressandmore.herokuapp.com/hybrid/" + id)
     .then(res => res.json())
     .then(data => {
       setHybridDetailsData(data)

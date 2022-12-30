@@ -41,7 +41,7 @@ function CollapsibleExample() {
                 <NavDropdown.Divider />
                 
               </NavDropdown>
-              <Nav.Link as={Link} to={"/adjustable-base"}>Adjustable Base</Nav.Link>
+              <Nav.Link as={Link} to={"/adjustable"}>Adjustable Base</Nav.Link>
               <Nav.Link as={Link} to={"/Pillows"}>Pillows</Nav.Link>
               <Nav.Link as={Link} to={"/cart"}><ShoppingCartIcon /></Nav.Link>
             </Nav>
@@ -53,9 +53,9 @@ function CollapsibleExample() {
       <div>
       <Switch>
           <Route path='/' element={<Home />} />
-          <Route path='/adjustable-base' element={<AdjustableBase />} />
+          <Route path='/adjustable' element={<AdjustableBase />} />
           <Route path='/Pillows' element={<Pillows />} />
-          <Route path='/adjustable-base/:id' element={<AdjustableBaseDetails />}/>
+          <Route path='/adjustable/:id' element={<AdjustableBaseDetails />}/>
           <Route path='/Pillows/:id' element={<PillowDetails />}/>
           <Route path='/memory-foam' element={<MemoryFoam />} />
           <Route path='/memory-foam/:id' element={<MemoryFoamDetails />} />

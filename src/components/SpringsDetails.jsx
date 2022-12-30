@@ -18,7 +18,7 @@ const SpringsDetails = () => {
   const [springsSize, setSpringsSize] = useState("")
   
   useEffect(() => {
-    fetch("http://localhost:3001/springs/" + id)
+    fetch("https://zzmattressandmore.herokuapp.com/springs/" + id)
     .then(res => res.json())
     .then(data => {
       setSpringsDetailsData(data)

@@ -13,7 +13,7 @@ const Hybrid = () => {
   const [ hybridDB, setHybridDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/hybrid")
+    fetch("https://zzmattressandmore.herokuapp.com/hybrid")
     .then(res => res.json())
     .then(data => {
       setHybridDB(data)
