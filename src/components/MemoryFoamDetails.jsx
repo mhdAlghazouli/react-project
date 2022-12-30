@@ -115,7 +115,7 @@ const MemoryFoamDetails = () => {
             </Col>
           </Row>
         </Card>
-        <div style={{"marginTop": "15px"}}>
+        <div style={{"marginTop": "15px"}} className='d-flex flex-column justify-content-center align-items-center'>
           <Button onClick={handleSubmit2}>More Details</Button>
         </div>
         <div style={{"marginTop": "15px", "display": "none"}} id="hiddenDiv">

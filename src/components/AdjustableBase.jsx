@@ -26,7 +26,7 @@ const AdjustableBase = () => {
   
   return ( 
     <div>
-      <div style={{
+      <div className='d-flex flex-column justify-content-center align-items-center' style={{
         "margin" : "30px"
       }}>
         

@@ -117,7 +117,7 @@ const SpringsDetails = () => {
           </Row>
         </Card>
         <div style={{"marginTop": "15px"}}>
-          <Button onClick={handleSubmit2}>More Details</Button>
+          <Button onClick={handleSubmit2} className='d-flex flex-column justify-content-center align-items-center'>More Details</Button>
         </div>
         <div style={{"marginTop": "15px", "display": "none"}} id="hiddenDiv">
           <p>{springsDetailsData && springsDetailsData.des}</p>

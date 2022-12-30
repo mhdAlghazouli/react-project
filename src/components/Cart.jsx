@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image';
 
 
 
+
 const Cart = () => {
   const [cartData, setCartData] = useState([]);
   let sum = 0;
@@ -36,9 +37,9 @@ const Cart = () => {
   
   
   return ( 
-    <div>
+    <div className='d-flex flex-column justify-content-center align-items-center' >
       {cartData.length===0  ?<p>Oops...  Your Cart is Empty</p>: <div> {cartData.map(el =>( 
-      <div key={el.id} >
+      <div  key={el.id} >
         <Card style={{
               "marginTop" : "15px",
               "boxShadow" : "0 4px 8px 0 rgba(0, 0, 0, 0.4)"
@@ -65,7 +66,7 @@ const Cart = () => {
         
       </div>
        
-        )) }  <Button style={{"marginTop": "15px", "marginBottom": "15px"}} onClick={handleCheckOut}>Total is:{<span className="text-danger"> ${sum}</span>} Click to checkout</Button> </div>    }
+        )) }<div className='d-flex flex-column justify-content-center align-items-center'> <Button  style={{"marginTop": "15px", "marginBottom": "15px"}} onClick={handleCheckOut}>Total is:{<span className="text-danger"> ${sum}</span>} Click to checkout</Button></div> </div>    }
         
         
     </div>

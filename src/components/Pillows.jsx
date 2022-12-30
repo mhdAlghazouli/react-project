@@ -27,7 +27,7 @@ const Pillows = () => {
     <div>
       <div style={{
         "margin" : "30px"
-      }}>
+      }} className='d-flex flex-column justify-content-center align-items-center'>
         
         <h2>Pillows</h2>
         <p>Sweet dreams in the making.</p>

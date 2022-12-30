@@ -2,6 +2,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes as Switch, Link  } from 'react-router-dom';
 import "./style.css";
 
 const SearchBox = ({ searchData }) => {
@@ -37,7 +38,11 @@ const SearchBox = ({ searchData }) => {
         <Col className='searchCol'>
           <div className="dataResult">
             {filteredData.map((value, key) => {
-              return <div key={value.name}><a className='dataItem' href={value.link}><p>{value.name}</p></a></div> 
+              return <div key={value.name}>
+                
+                <a className='dataItem'  href={value.link}><p>{value.name}</p></a>
+                
+                </div> 
             })}
           </div>
         </Col>

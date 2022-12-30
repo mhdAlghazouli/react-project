@@ -4,19 +4,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter as Router, Route, Routes as Switch, Link  } from 'react-router-dom';
-import Home from './Home';
-import AdjustableBase from './AdjustableBase';
-import Pillows from './Pillows';
-import AdjustableBaseDetails from './AdjustableBaseDetails';
-import PillowDetails from './PillowDetails';
-import MemoryFoam from './MemoryFoam';
-import Hybrid from './Hybrid';
-import MemoryFoamDetails from './MemoryFoamDetails';
-import HybridDetails from './HybridDetails';
-import Springs from './Springs';
-import SpringsDetails from "./SpringsDetails";
-import Mattresses from './Mattresses';
-import Cart from './Cart';
+// import Home from './Home';
+// import AdjustableBase from './AdjustableBase';
+// import Pillows from './Pillows';
+// import AdjustableBaseDetails from './AdjustableBaseDetails';
+// import PillowDetails from './PillowDetails';
+// import MemoryFoam from './MemoryFoam';
+// import Hybrid from './Hybrid';
+// import MemoryFoamDetails from './MemoryFoamDetails';
+// import HybridDetails from './HybridDetails';
+// import Springs from './Springs';
+// import SpringsDetails from "./SpringsDetails";
+// import Mattresses from './Mattresses';
+// import Cart from './Cart';
 import SearchBox from './SearchBox';
 import searchData from "./searchData.json";
 import "./style.css";
@@ -24,9 +24,9 @@ import "./style.css";
 function CollapsibleExample() {
 
   return (
-    <Router>
+    <div >
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
-        <Container>
+        <Container >
           <Navbar.Brand as={Link} to={"/"}>ZzMattress</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -50,25 +50,9 @@ function CollapsibleExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div>
-      <Switch>
-          <Route path='/' element={<Home />} />
-          <Route path='/adjustable' element={<AdjustableBase />} />
-          <Route path='/Pillows' element={<Pillows />} />
-          <Route path='/adjustable/:id' element={<AdjustableBaseDetails />}/>
-          <Route path='/Pillows/:id' element={<PillowDetails />}/>
-          <Route path='/memory-foam' element={<MemoryFoam />} />
-          <Route path='/memory-foam/:id' element={<MemoryFoamDetails />} />
-          <Route path='/hybrid' element={<Hybrid />} />
-          <Route path='/hybrid/:id' element={<HybridDetails />} />
-          <Route path='/springs' element={<Springs />}/>
-          <Route path='/springs/:id' element={<SpringsDetails />} />
-          <Route path='/mattresses' element={<Mattresses />}/>
-          <Route path='/cart' element={<Cart />}/>
-        </Switch>
-      </div>
+      
 
-    </Router>
+    </div>
   );
 }
 

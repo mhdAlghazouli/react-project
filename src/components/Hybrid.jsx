@@ -27,7 +27,7 @@ const Hybrid = () => {
     <div>
       <div style={{
         "margin" : "30px"
-      }}>
+      }} className='d-flex flex-column justify-content-center align-items-center'>
         
         <h2>Hybrid Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>
