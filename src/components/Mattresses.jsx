@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -33,7 +34,7 @@ const Mattresses = () => {
       </div>
       {mattressesDB && mattressesDB.map(mattress => (
         
-        <a href={mattress.link} style={{
+        <Link to={mattress.link} style={{
           "textDecoration": "none",
           "color": "black"
         }} key={mattress.name}>
@@ -62,7 +63,7 @@ const Mattresses = () => {
           
             
           </Container>
-        </a>
+        </Link>
       ))}
       
       
