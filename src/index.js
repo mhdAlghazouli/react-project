@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes as Switch, Link  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes as Switch, Link, HashRouter  } from 'react-router-dom';
 import CollapsibleExample from "./components/Navbar"
 import App from './App';
 import Home from './components/Home';
@@ -25,7 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <App />
         <Switch >
             <Route exact path='/' element={<Home />} />
@@ -42,7 +42,7 @@ root.render(
             <Route exact path='/mattresses' element={<Mattresses />}/>
             <Route exact path='/cart' element={<Cart />}/>
           </Switch>
-    </Router>
+    </HashRouter>
     <Footer />
   </React.StrictMode>
 );
