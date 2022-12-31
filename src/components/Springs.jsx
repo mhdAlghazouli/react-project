@@ -13,10 +13,10 @@ const Springs = () => {
   const [ springsDB, setSpringsDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/springs")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setSpringsDB(data)
+      setSpringsDB(data[0].springs)
     })
   },[]);
  
@@ -26,7 +26,7 @@ const Springs = () => {
     <div>
       <div style={{
         "margin" : "30px"
-      }}>
+      }} className='d-flex flex-column justify-content-center align-items-center'>
         
         <h2>Springs Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>

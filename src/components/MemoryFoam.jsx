@@ -13,10 +13,10 @@ const MemoryFoam = () => {
   const [ memoryFoamDB, setMemoryFoamDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/memory-foam")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setMemoryFoamDB(data)
+      setMemoryFoamDB(data[0]["memory-foam"])
     })
   },[]);
   
@@ -26,7 +26,7 @@ const MemoryFoam = () => {
     <div>
       <div style={{
         "margin" : "30px"
-      }}>
+      }} className='d-flex flex-column justify-content-center align-items-center'>
         
         <h2>Memory foam Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>

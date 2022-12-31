@@ -7,6 +7,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Rating from '@mui/material/Rating';
+import data from "./adjustable.json"
+
 
 
 
@@ -18,12 +20,14 @@ const HybridDetails = () => {
   const [hybridSize, setHybridSize] = useState("");
   
   useEffect(() => {
-    fetch("http://localhost:3001/hybrid/" + id)
-    .then(res => res.json())
-    .then(data => {
-      setHybridDetailsData(data)
-    })
-  },[]);
+
+    for(let i = 0 ; i < data.hybrid.length; i++ ){
+      
+      if(data.hybrid[i].id === Number(id)){
+        setHybridDetailsData(data.hybrid[i])
+      }
+    }
+  },[])
 
   
 
@@ -114,7 +118,7 @@ const HybridDetails = () => {
             </Col>
           </Row>
         </Card>
-        <div style={{"marginTop": "15px"}}>
+        <div style={{"marginTop": "15px"}} className='d-flex flex-column justify-content-center align-items-center'>
           <Button onClick={handleSubmit2}>More Details</Button>
         </div>
         <div style={{"marginTop": "15px", "display": "none"}} id="hiddenDiv">

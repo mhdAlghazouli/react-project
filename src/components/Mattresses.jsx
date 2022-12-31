@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -12,10 +13,10 @@ const Mattresses = () => {
   const [ mattressesDB, setMattressesDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/mattresses")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setMattressesDB(data)
+      setMattressesDB(data[0].mattresses)
     })
   },[]);
   
@@ -25,7 +26,7 @@ const Mattresses = () => {
     <div>
       <div style={{
         "margin" : "30px"
-      }}>
+      }} className='d-flex flex-column justify-content-center align-items-center'>
         
         <h2>Mattresses</h2>
         <p>Relax, we’ve got your back. And your side and stomach, too.</p>
@@ -33,7 +34,7 @@ const Mattresses = () => {
       </div>
       {mattressesDB && mattressesDB.map(mattress => (
         
-        <a href={mattress.link} style={{
+        <Link to={mattress.link} style={{
           "textDecoration": "none",
           "color": "black"
         }} key={mattress.name}>
@@ -62,7 +63,7 @@ const Mattresses = () => {
           
             
           </Container>
-        </a>
+        </Link>
       ))}
       
       

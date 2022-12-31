@@ -9,20 +9,22 @@ import { Container } from "react-bootstrap";
 
 
 
+
 const AdjustableBase = () => {
   const [ adjustableDB, setAdjustableDB ] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/adjustable")
+    fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      setAdjustableDB(data)
+      
+      setAdjustableDB(data[0].adjustable)
     })
-  },[]);
-
+  },[adjustableDB]);
+  
   return ( 
     <div>
-      <div style={{
+      <div className='d-flex flex-column justify-content-center align-items-center' style={{
         "margin" : "30px"
       }}>
         

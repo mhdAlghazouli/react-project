@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Rating from '@mui/material/Rating';
+import data from "./adjustable.json"
 
 
 
@@ -18,12 +19,14 @@ const MemoryFoamDetails = () => {
   const [memoryFoamSize, setMemoryFoamSize] = useState('')
   
   useEffect(() => {
-    fetch("http://localhost:3001/memory-foam/" + id)
-    .then(res => res.json())
-    .then(data => {
-      setMemoryFoamDetailsData(data)
-    })
-  },[]);
+
+    for(let i = 0 ; i < data["memory-foam"].length; i++ ){
+      
+      if(data["memory-foam"][i].id === Number(id)){
+        setMemoryFoamDetailsData(data["memory-foam"][i])
+      }
+    }
+  },[])
 
   function handleSubmit(e) {
     setMemoryFoamSize(e.target.value)
@@ -112,7 +115,7 @@ const MemoryFoamDetails = () => {
             </Col>
           </Row>
         </Card>
-        <div style={{"marginTop": "15px"}}>
+        <div style={{"marginTop": "15px"}} className='d-flex flex-column justify-content-center align-items-center'>
           <Button onClick={handleSubmit2}>More Details</Button>
         </div>
         <div style={{"marginTop": "15px", "display": "none"}} id="hiddenDiv">
