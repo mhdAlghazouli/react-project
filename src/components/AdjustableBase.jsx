@@ -17,11 +17,11 @@ const AdjustableBase = () => {
     fetch("https://mhdalghazouli.github.io/data-of-react-project/")
     .then(res => res.json())
     .then(data => {
-      
+      console.log(data)
       setAdjustableDB(data[0].adjustable)
     })
   },[adjustableDB]);
-  
+  console.log(adjustableDB)
   return ( 
     <div>
       <div className='d-flex flex-column justify-content-center align-items-center' style={{

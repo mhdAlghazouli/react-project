@@ -68,9 +68,14 @@ const MemoryFoamDetails = () => {
     }
     let oldCartData = JSON.parse(localStorage.getItem('cart'));
     if(!oldCartData.find(i => i.id === newCartData.id)){
-      oldCartData.push(newCartData);
-      localStorage.setItem('cart', JSON.stringify(oldCartData));
-      alert('added to your cart')
+      if(newCartData.size === ""){
+        alert("chose a size")
+      }else{
+
+        oldCartData.push(newCartData);
+        localStorage.setItem('cart', JSON.stringify(oldCartData));
+        alert('added to your cart')
+      }
     }else{
       alert('already in your cart')
     }
